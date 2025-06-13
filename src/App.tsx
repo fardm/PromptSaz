@@ -37,7 +37,9 @@ function App() {
                 <Wand2 className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900 dark:text-white">AI Prompt Builder</h1>
+                <h1 className="text-xl font-bold text-gray-900 dark:text-white">PromptSaz</h1>
+                <label for="main-subject" class="block text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">AI Image Prompt Builder</label>
+                {/* <p class="text-sm text-gray-500 dark:text-gray-400">AI Image Prompt Builder</p> */}
               </div>
             </div>
             <div className="flex items-center space-x-3">
@@ -116,6 +118,21 @@ function App() {
           </div>
         </div>
       </div>
+{/* Footer */}
+<footer className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 mt-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+          <div className="flex flex-col sm:flex-row justify-between items-center">
+            <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
+              © {new Date().getFullYear()} PromptSaz.
+            </p>
+            <div className="flex space-x-4 mt-4 sm:mt-0">
+              <a href="https://github.com/fardm" target="_blank"></a>
+              <a href="https://t.me/ifard_ir/" target="_blank" ></a>
+              <a href="https://x.com/ifard_ir/" target="_blank"></a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
