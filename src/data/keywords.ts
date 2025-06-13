@@ -7,7 +7,7 @@ export const categories: Category[] = [
     titlePersian: 'نورپردازی',
     icon: 'lightbulb',
     keywords: [
-      { id: 'soft-box', english: 'Soft box lighting', persian: 'نورسافت باکس', image: '/images/soft-box-lighting.webp' },
+      { id: 'soft-box', english: 'Soft box lighting', persian: 'نورسافت باکس', image: new URL('../assets/images/soft-box-lighting.webp', import.meta.url).href },
       { id: 'studio', english: 'Studio lighting', persian: 'نورپردازی استودیویی', image: '/images/studio-lighting.webp' },
       { id: 'dark-studio', english: 'Dark studio', persian: 'استودیوی تاریک', image: '/images/dark-studio.webp' },
       { id: 'cinematic', english: 'Cinematic lighting', persian: 'نورپردازی سینمایی', image: '/images/cinematic-lighting.webp' },
