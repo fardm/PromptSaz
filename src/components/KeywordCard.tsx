@@ -42,7 +42,7 @@ const KeywordCard: React.FC<KeywordCardProps> = ({
             {keyword.english}
           </p>
           {showTranslation && (
-            <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
+            <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
               {keyword.persian}
             </p>
           )}

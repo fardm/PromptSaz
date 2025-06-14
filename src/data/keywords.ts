@@ -19,7 +19,6 @@ export const categories: Category[] = [
       { id: 'rim', english: 'Rim lighting', persian: 'نور لبه', image: new URL('../assets/images/rim-lighting.webp', import.meta.url).href },
       { id: 'neon', english: 'Neon light', persian: 'نئون', image: new URL('../assets/images/neon-light.webp', import.meta.url).href },
       { id: 'silhouette', english: 'Silhouetting', persian: 'سایه‌نما (سیلوئت)', image: new URL('../assets/images/silhouette.webp', import.meta.url).href },
-      { id: 'bokeh', english: 'Bokeh Effect', persian: 'بوکه', image: new URL('../assets/images/bokeh.webp', import.meta.url).href },
       { id: 'natural', english: 'Natural lighting', persian: 'نور طبیعی', image: new URL('../assets/images/natural-lighting.webp', import.meta.url).href },
       { id: 'overcast', english: 'Overcast lighting', persian: 'نور آسمان ابری', image: new URL('../assets/images/overcast-lighting.webp', import.meta.url).href },
       { id: 'sunlight', english: 'Sunlight', persian: 'نور خورشید', image: new URL('../assets/images/sunlight.webp', import.meta.url).href },
@@ -36,21 +35,19 @@ export const categories: Category[] = [
     titlePersian: 'رنگ بندی',
     icon: 'palette',
     keywords: [
-      { id: 'monochrome', english: 'Monochrome', persian: 'تک رنگ', image: '/images/monochrome.webp' },
-      { id: 'duotone', english: 'Duotone', persian: 'دو رنگ', image: '/images/duotone.webp' },
-      { id: 'black-white', english: 'Black and White', persian: 'سیاه سفید', image: '/images/black-white.webp' },
-      { id: 'subdued', english: 'Subdued neutrals', persian: 'خنثی', image: '/images/subdued-neutrals.webp' },
-      { id: 'muted', english: 'Muted colors', persian: 'رنگ های مرده', image: '/images/muted-colors.webp' },
-      { id: 'vivid', english: 'Vivid Colors', persian: 'رنگ های زنده', image: '/images/vivid-colors.webp' },
-      { id: 'vibrant', english: 'Vibrant Colors', persian: 'رنگ های پر جنب‌و‌جوش', image: '/images/vibrant-colors.webp' },
-      { id: 'warm', english: 'Warm tones', persian: 'رنگ‌های گرم', image: '/images/warm-tones.webp' },
-      { id: 'cool', english: 'Cool tones', persian: 'رنگ‌های سرد', image: '/images/cool-tones.webp' },
-      { id: 'pastel', english: 'Pastel Palette', persian: 'پالت پاستلی', image: '/images/pastel-palette.webp' },
-      { id: 'earth', english: 'Earth tones', persian: 'رنگ‌های زمینی', image: '/images/earth-tones.webp' },
-      { id: 'jewel', english: 'Jewel tones', persian: 'رنگ‌های جواهری', image: '/images/jewel-tones.webp' },
-      { id: 'vintage-colors', english: 'Vintage', persian: 'قدیمی', image: '/images/vintage.webp' },
-      { id: 'muted-vintage', english: 'Muted vintage colors', persian: 'رنگ‌های ملایم قدیمی', image: '/images/muted-vintage.webp' },
-      { id: 'cinematic-grading', english: 'Cinematic color grading', persian: 'تنظیم رنگ سینمایی', image: '/images/cinematic-grading.webp' },
+      { id: 'black-white', english: 'Black and White', persian: 'سیاه سفید', image: new URL('../assets/images/black-and-white.webp', import.meta.url).href },
+      { id: 'subdued', english: 'Subdued neutrals', persian: 'خنثی', image: new URL('../assets/images/subdued-neutrals.webp', import.meta.url).href },
+      { id: 'muted', english: 'Muted colors', persian: 'رنگ های مرده', image: new URL('../assets/images/muted-colors.webp', import.meta.url).href },
+      { id: 'vivid', english: 'Vivid Colors', persian: 'رنگ های زنده', image: new URL('../assets/images/vivid-colors.webp', import.meta.url).href },
+      { id: 'vibrant', english: 'Vibrant Colors', persian: 'رنگ های پر جنب‌و‌جوش', image: new URL('../assets/images/vibrant-colors.webp', import.meta.url).href },
+      { id: 'warm', english: 'Warm tones', persian: 'رنگ‌های گرم', image: new URL('../assets/images/warm-tones.webp', import.meta.url).href },
+      { id: 'cool', english: 'Cool tones', persian: 'رنگ‌های سرد', image: new URL('../assets/images/cool tones.webp', import.meta.url).href },
+      { id: 'pastel', english: 'Pastel Palette', persian: 'پالت پاستلی', image: new URL('../assets/images/pastel-palette.webp', import.meta.url).href },
+      { id: 'earth', english: 'Earth tones', persian: 'رنگ‌های زمینی', image: new URL('../assets/images/earth-tones.webp', import.meta.url).href },
+      { id: 'jewel', english: 'Jewel tones', persian: 'رنگ‌های جواهری', image: new URL('../assets/images/jewel-tones.webp', import.meta.url).href },
+      { id: 'vintage-colors', english: 'Vintage', persian: 'قدیمی', image: new URL('../assets/images/vintage.webp', import.meta.url).href },
+      { id: 'muted-vintage', english: 'Muted vintage colors', persian: 'رنگ‌های ملایم قدیمی', image: new URL('../assets/images/muted-vintage.webp', import.meta.url).href },
+      { id: 'cinematic-grading', english: 'Cinematic color grading', persian: 'تنظیم رنگ سینمایی', image: new URL('../assets/images/cinematic-color.webp', import.meta.url).href },
     ]
   },
   {
@@ -59,14 +56,14 @@ export const categories: Category[] = [
     titlePersian: 'حس و حال',
     icon: 'heart',
     keywords: [
-      { id: 'moody', english: 'Moody', persian: 'حال‌وهوای تاریک و احساسی', image: '/images/moody.webp' },
-      { id: 'cheerful', english: 'Cheerful', persian: 'شاد و پرانرژی', image: '/images/cheerful.webp' },
-      { id: 'dreamy', english: 'Dreamy', persian: 'رویایی و خیال‌انگیز', image: '/images/dreamy.webp' },
-      { id: 'dramatic-mood', english: 'Dramatic', persian: 'پرتنش و تاثیرگذار', image: '/images/dramatic-mood.webp' },
-      { id: 'serene', english: 'Serene', persian: 'آرام و دلنشین', image: '/images/serene.webp' },
-      { id: 'mysterious', english: 'Mysterious', persian: 'مرموز و اسرارآمیز', image: '/images/mysterious.webp' },
-      { id: 'romantic', english: 'Romantic', persian: 'عاشقانه و لطیف', image: '/images/romantic.webp' },
-      { id: 'epic', english: 'Epic', persian: 'حماسی و باشکوه', image: '/images/epic.webp' },
+      { id: 'moody', english: 'Moody', persian: 'تاریک و احساسی', image: new URL('../assets/images/moody.webp', import.meta.url).href },
+      { id: 'cheerful', english: 'Cheerful', persian: 'شاد و پرانرژی', image: new URL('../assets/images/cheerful.webp', import.meta.url).href },
+      { id: 'dreamy', english: 'Dreamy', persian: 'رویایی و خیال‌انگیز', image: new URL('../assets/images/dreamy.webp', import.meta.url).href },
+      { id: 'dramatic-mood', english: 'Dramatic', persian: 'دراماتیک و تاثیرگذار', image: new URL('../assets/images/dramatic.webp', import.meta.url).href },
+      { id: 'serene', english: 'Serene', persian: 'آرام و دلنشین', image: new URL('../assets/images/serene.webp', import.meta.url).href },
+      { id: 'mysterious', english: 'Mysterious', persian: 'مرموز و اسرارآمیز', image: new URL('../assets/images/mysterious.webp', import.meta.url).href },
+      { id: 'romantic', english: 'Romantic', persian: 'عاشقانه و لطیف', image: new URL('../assets/images/romantic.webp', import.meta.url).href },
+      { id: 'epic', english: 'Epic', persian: 'حماسی و باشکوه', image: new URL('../assets/images/epic.webp', import.meta.url).href },
     ]
   },
   {
@@ -74,6 +71,7 @@ export const categories: Category[] = [
     title: 'Style',
     titlePersian: 'سبک',
     icon: 'brush',
+    keywords: [],
     subcategories: [
       {
         id: 'rendering-style',
@@ -81,13 +79,13 @@ export const categories: Category[] = [
         titlePersian: 'تکنیک تصویری',
         icon: 'paintbrush',
         keywords: [
-          { id: 'watercolor', english: 'Watercolor', persian: 'آبرنگ', image: '/images/watercolor.webp' },
-          { id: 'digital-paint', english: 'Digital paint', persian: 'نقاشی دیجیتال', image: '/images/digital-paint.webp' },
-          { id: 'holographic', english: 'Holographic', persian: 'هولوگرافیک', image: '/images/holographic.webp' },
-          { id: 'graffiti', english: 'Graffiti', persian: 'گرافیتی', image: '/images/graffiti.webp' },
-          { id: 'stencil', english: 'Stencil', persian: 'شابلون', image: '/images/stencil.webp' },
-          { id: 'collage', english: 'Collage', persian: 'کلاژ', image: '/images/collage.webp' },
-          { id: 'papercraft', english: 'Papercraft', persian: 'کاردستی کاغذی', image: '/images/papercraft.webp' },
+          { id: 'watercolor', english: 'Watercolor', persian: 'آبرنگ', image: new URL('../assets/images/watercolor.webp', import.meta.url).href },
+          { id: 'digital-paint', english: 'Digital paint', persian: 'نقاشی دیجیتال', image: new URL('../assets/images/digital-paint.webp', import.meta.url).href },
+          { id: 'holographic', english: 'Holographic', persian: 'هولوگرافیک', image: new URL('../assets/images/holographic.webp', import.meta.url).href },
+          { id: 'graffiti', english: 'Graffiti', persian: 'گرافیتی', image: new URL('../assets/images/graffiti.webp', import.meta.url).href },
+          { id: 'stencil', english: 'Stencil', persian: 'شابلون', image: new URL('../assets/images/stencil.webp', import.meta.url).href },
+          { id: 'collage', english: 'Collage', persian: 'کلاژ', image: new URL('../assets/images/collage.webp', import.meta.url).href },
+          { id: 'papercraft', english: 'Papercraft', persian: 'کاردستی کاغذی', image: new URL('../assets/images/papercraft.webp', import.meta.url).href },
         ]
       },
       {
@@ -96,15 +94,13 @@ export const categories: Category[] = [
         titlePersian: 'سبک‌های هنری',
         icon: 'image',
         keywords: [
-          { id: 'realistic', english: 'Realistic', persian: 'واقع‌گرایی', image: '/images/realistic.webp' },
-          { id: 'hyperrealism', english: 'Hyperrealism', persian: 'فرا واقع‌گرایی', image: '/images/hyperrealism.webp' },
-          { id: 'surrealist', english: 'Surrealist', persian: 'سورئال', image: '/images/surrealist.webp' },
-          { id: 'pop-art', english: 'Pop-art', persian: 'پاپ آرت', image: '/images/pop-art.webp' },
-          { id: 'cubism', english: 'Cubism', persian: 'کوبیسم', image: '/images/cubism.webp' },
-          { id: 'abstract', english: 'Abstract art', persian: 'هنر انتزاعی', image: '/images/abstract.webp' },
-          { id: 'fantasy', english: 'Fantasy', persian: 'فانتزی', image: '/images/fantasy.webp' },
-          { id: 'fine-art', english: 'Fine art', persian: 'هنرهای زیبا', image: '/images/fine-art.webp' },
-          { id: 'pixar', english: 'Pixar style', persian: 'پیکسار', image: new URL('../assets/images/pixar.webp', import.meta.url).href },
+          { id: 'realistic', english: 'realistic', persian: 'واقع‌گرایی', image: new URL('../assets/images/realistic.webp', import.meta.url).href },
+          { id: 'hyperrealistic', english: 'hyperrealistic', persian: 'فرا واقع‌گرایی', image: new URL('../assets/images/hyperrealistic.webp', import.meta.url).href },
+          { id: 'surreal', english: 'surreal', persian: 'سورئال', image: new URL('../assets/images/surreal.webp', import.meta.url).href },
+          { id: 'pop-art', english: 'pop-art style', persian: 'پاپ آرت', image: new URL('../assets/images/pop-art.webp', import.meta.url).href },
+          { id: 'cubist', english: 'cubist style', persian: 'کوبیسم', image: new URL('../assets/images/cubist.webp', import.meta.url).href },
+          { id: 'abstract', english: 'abstract art style', persian: 'هنر انتزاعی', image: new URL('../assets/images/abstract.webp', import.meta.url).href },
+          { id: 'pixar', english: 'Pixar animation style', persian: 'پیکسار', image: new URL('../assets/images/pixar.webp', import.meta.url).href },
         ]
       },
       {
@@ -113,17 +109,18 @@ export const categories: Category[] = [
         titlePersian: 'سبک‌های تصویرسازی',
         icon: 'pen-tool',
         keywords: [
-          { id: 'flat-illustration', english: 'Flat illustration', persian: 'تصویر فلت', image: '/images/flat-illustration.webp' },
-          { id: '3d-illustration', english: '3D illustration', persian: 'تصویر سه‌بعدی', image: '/images/3d-illustration.webp' },
-          { id: 'vector', english: 'Vector', persian: 'وکتور', image: '/images/vector.webp' },
-          { id: 'line-art', english: 'Line art', persian: 'لاین آرت', image: '/images/line-art.webp' },
-          { id: 'sketch', english: 'Sketch', persian: 'اسکچ', image: '/images/sketch.webp' },
-          { id: 'pixel-art', english: 'Pixel art', persian: 'پیکسل آرت', image: new URL('../assets/images/pixel.webp', import.meta.url).href },
-          { id: 'concept-art', english: 'Concept art', persian: 'کانسپت آرت', image: '/images/concept-art.webp' },
-          { id: 'comics', english: 'Comics', persian: 'کمیک', image: '/images/comics.webp' },
-          { id: 'cartoon', english: 'Cartoon', persian: 'کارتون', image: '/images/cartoon.webp' },
-          { id: 'anime', english: 'Anime', persian: 'انیمه', image: '/images/anime.webp' },
-          { id: 'caricature', english: 'Caricature', persian: 'کاریکاتور', image: '/images/caricature.webp' },
+          { id: '3d-illustration', english: '3D illustration', persian: 'تصویر سه‌بعدی', image: new URL('../assets/images/3d-illustration.webp', import.meta.url).href },
+          { id: 'flat-illustration', english: 'Flat illustration', persian: 'تصویر فلت', image: new URL('../assets/images/flat-illustration.webp', import.meta.url).href },
+          { id: 'vector', english: 'Vector', persian: 'وکتور', image: new URL('../assets/images/vector.webp', import.meta.url).href },
+          { id: 'pixel-art', english: 'Pixel art', persian: 'پیکسل آرت', image: new URL('../assets/images/pixel-art.webp', import.meta.url).href },
+          { id: 'line-art', english: 'Line art', persian: 'لاین آرت', image: new URL('../assets/images/line-art.webp', import.meta.url).href },
+          { id: 'sketch', english: 'Sketch', persian: 'اسکچ', image: new URL('../assets/images/sketch.webp', import.meta.url).href },
+          { id: 'doodle', english: 'Doodle', persian: 'دودل', image: new URL('../assets/images/doodle.webp', import.meta.url).href },
+          { id: 'concept-art', english: 'Concept art', persian: 'کانسپت آرت', image: new URL('../assets/images/concept-art.webp', import.meta.url).href },
+          { id: 'comics', english: 'Comics', persian: 'کمیک', image: new URL('../assets/images/comics.webp', import.meta.url).href },
+          { id: 'cartoon', english: 'Cartoon', persian: 'کارتون', image: new URL('../assets/images/cartoon.webp', import.meta.url).href },
+          { id: 'anime', english: 'Anime', persian: 'انیمه', image: new URL('../assets/images/anime.webp', import.meta.url).href },
+          { id: 'caricature', english: 'Caricature', persian: 'کاریکاتور', image: new URL('../assets/images/caricature.webp', import.meta.url).href },
         ]
       },
       {
@@ -132,10 +129,10 @@ export const categories: Category[] = [
         titlePersian: 'سبک‌های هنرمندان',
         icon: 'user',
         keywords: [
-          { id: 'magritte', english: 'René Magritte', persian: 'رنه ماگریت', image: '/images/magritte.webp' },
-          { id: 'picasso', english: 'Pablo Picasso', persian: 'پابلو پیکاسو', image: '/images/picasso.webp' },
-          { id: 'dali', english: 'Salvador Dalí', persian: 'سالوادور دالی', image: '/images/dali.webp' },
-          { id: 'van-gogh', english: 'Vincent van Gogh', persian: 'ونسان ون گوگ', image: '/images/van-gogh.webp' },
+          { id: 'magritte', english: 'René Magritte', persian: 'رنه ماگریت', image: new URL('../assets/images/magritte.webp', import.meta.url).href },
+          { id: 'picasso', english: 'Pablo Picasso', persian: 'پابلو پیکاسو', image: new URL('../assets/images/picasso.webp', import.meta.url).href },
+          { id: 'dali', english: 'Salvador Dalí', persian: 'سالوادور دالی', image: new URL('../assets/images/dali.webp', import.meta.url).href },
+          { id: 'van-gogh', english: 'Vincent van Gogh', persian: 'ونسان ون گوگ', image: new URL('../assets/images/van-gogh.webp', import.meta.url).href },
         ]
       }
     ]
@@ -145,6 +142,7 @@ export const categories: Category[] = [
     title: 'Composition',
     titlePersian: 'ترکیب بندی',
     icon: 'layout',
+    keywords: [],
     subcategories: [
       {
         id: 'subject-view',
@@ -156,6 +154,8 @@ export const categories: Category[] = [
           { id: 'side-view', english: 'Side view', persian: 'نیم رخ', image: new URL('../assets/images/side-view.webp', import.meta.url).href },
           { id: 'back-view', english: 'Back view', persian: 'از پشت', image: new URL('../assets/images/back-view.webp', import.meta.url).href },
           { id: 'selfie', english: 'Selfie', persian: 'سلفی', image: new URL('../assets/images/selfie.webp', import.meta.url).href },
+          { id: 'first-person', english: 'First-Person view', persian: 'نمای اول شخص', image: new URL('../assets/images/first-person.webp', import.meta.url).href },
+          { id: 'third-person', english: 'Third-Person View', persian: 'نمای سوم شخص', image: new URL('../assets/images/third-person.webp', import.meta.url).href },
         ]
       },
       {
@@ -172,6 +172,7 @@ export const categories: Category[] = [
           { id: 'birds-eye', english: "Bird's eye view", persian: 'نمای دید پرنده', image: new URL('../assets/images/birds-eye.webp', import.meta.url).href },
           { id: 'drone-shot', english: 'Drone shot', persian: 'نمای پهباد', image: new URL('../assets/images/drone-shot.webp', import.meta.url).href },
           { id: 'top-down', english: 'Top-down view', persian: 'بالا به پایین', image: new URL('../assets/images/top-down-view.webp', import.meta.url).href },
+          { id: 'aerial-view', english: 'Aerial View', persian: 'نمای هوایی', image: new URL('../assets/images/aerial-view.webp', import.meta.url).href },
         ]
       },
       {
@@ -191,10 +192,11 @@ export const categories: Category[] = [
         titlePersian: 'عمق میدان',
         icon: 'aperture',
         keywords: [
-          { id: 'blurred-bg', english: 'Blurred Background', persian: 'پس‌زمینه تار (محو)', image: '/images/blurred-bg.webp' },
-          { id: 'sharp-bg', english: 'Sharp Background', persian: 'پس‌زمینه واضح', image: '/images/sharp-bg.webp' },
-          { id: 'sharp-focus', english: 'Sharp focus', persian: 'فوکوس واضح', image: '/images/sharp-focus.webp' },
-          { id: 'soft-focus', english: 'Soft focus', persian: 'فوکوس نرم', image: '/images/soft-focus.webp' },
+          { id: 'shallow-depth', english: 'shallow depth of field', persian: 'عمق میدان کم', image: new URL('../assets/images/shallow-depth.webp', import.meta.url).href },
+          { id: 'blurred-bg', english: 'blurred background', persian: 'پس‌زمینه تار(محو)', image: new URL('../assets/images/blurred-bg.webp', import.meta.url).href },
+          { id: 'deep-depth', english: 'Deep depth of field', persian: 'عمق میدان زیاد', image: new URL('../assets/images/deep-depth.webp', import.meta.url).href },
+          { id: 'everything-focus', english: 'everything in focus', persian: 'همه چیز در فوکوس', image: new URL('../assets/images/everything-focus.webp', import.meta.url).href },
+          { id: 'bokeh', english: 'bokeh Effect', persian: 'بوکه', image: new URL('../assets/images/bokeh.webp', import.meta.url).href },
         ]
       },
       {
@@ -203,10 +205,10 @@ export const categories: Category[] = [
         titlePersian: 'نوع عکس',
         icon: 'image',
         keywords: [
-          { id: 'panorama', english: 'Panorama', persian: 'پانوراما', image: '/images/panorama.webp' },
-          { id: 'portrait', english: 'Portrait', persian: 'پرتره', image: '/images/portrait.webp' },
-          { id: 'modeling', english: 'Modeling photography', persian: 'مدلینگ', image: '/images/modeling.webp' },
-          { id: 'landscape', english: 'Landscape photography', persian: 'منظره', image: '/images/landscape.webp' },
+          { id: 'panorama', english: 'Panorama', persian: 'پانوراما', image: new URL('../assets/images/panorama.webp', import.meta.url).href },
+          { id: 'portrait', english: 'Portrait', persian: 'پرتره', image: new URL('../assets/images/portrait.webp', import.meta.url).href },
+          { id: 'modeling', english: 'Modeling photography', persian: 'مدلینگ', image: new URL('../assets/images/modeling.webp', import.meta.url).href },
+          { id: 'landscape', english: 'Landscape photography', persian: 'منظره', image: new URL('../assets/images/landscape.webp', import.meta.url).href },
         ]
       },
       {
@@ -215,13 +217,15 @@ export const categories: Category[] = [
         titlePersian: 'لنز',
         icon: 'circle',
         keywords: [
-          { id: 'wide-lens', english: 'Wide Lens', persian: 'واید', image: '/images/wide-lens.webp' },
-          { id: 'telephoto', english: 'Telephoto Lens', persian: 'تله', image: '/images/telephoto.webp' },
-          { id: 'macro', english: 'Macro Lens', persian: 'ماکرو', image: '/images/macro.webp' },
+          { id: 'wide-lens', english: 'Wide Lens', persian: 'واید', image: new URL('../assets/images/wide-lens.webp', import.meta.url).href },
+          { id: 'ultrawide', english: 'Ultra wide angle', persian: 'الترا واید', image: new URL('../assets/images/ultrawide.webp', import.meta.url).href },
+          { id: 'telephoto', english: 'Telephoto Lens', persian: 'تله', image: new URL('../assets/images/telephoto.webp', import.meta.url).href },
+          { id: 'prime', english: 'Prime Lens', persian: 'لنز پرایم', image: new URL('../assets/images/prime.webp', import.meta.url).href },
+          { id: 'zoom', english: 'Zoom Lens', persian: 'لنز زوم', image: new URL('../assets/images/zoom.webp', import.meta.url).href },
+          { id: 'fish-eye', english: 'Fish-eye lens', persian: 'لنز فیش‌آی', image: new URL('../assets/images/fish-eye.webp', import.meta.url).href },
+          { id: '360', english: '360 Angle', persian: '360 درجه', image: new URL('../assets/images/360.webp', import.meta.url).href },
+          { id: 'macro', english: 'Macro Lens', persian: 'ماکرو', image: new URL('../assets/images/macro.webp', import.meta.url).href },
           { id: 'microscopic', english: 'Microscopic perspective', persian: 'نمای میکروسکوپی', image: new URL('../assets/images/microscopic.webp', import.meta.url).href },
-          { id: 'prime', english: 'Prime Lens', persian: 'لنز پرایم', image: '/images/prime.webp' },
-          { id: 'zoom', english: 'Zoom Lens', persian: 'لنز زوم', image: '/images/zoom.webp' },
-          { id: 'fish-eye', english: 'Fish-eye lens', persian: 'لنز فیش‌آی', image: '/images/fish-eye.webp' },
         ]
       },
       {
@@ -247,14 +251,22 @@ export const categories: Category[] = [
     keywords: [
       { id: 'matte', english: 'Matte', persian: 'مات', image: new URL('../assets/images/matte.webp', import.meta.url).href },
       { id: 'shiny', english: 'Shiny', persian: 'براق', image: new URL('../assets/images/shiny.webp', import.meta.url).href },
-      { id: 'polished', english: 'Polished', persian: 'صیقلی', image: '/images/polished.webp' },
-      { id: 'glossy', english: 'Glossy', persian: 'درخشان', image: '/images/glossy.webp' },
-      { id: 'transparent', english: 'Transparent', persian: 'شفاف', image: '/images/transparent.webp' },
-      { id: 'opaque', english: 'Opaque', persian: 'کدر', image: '/images/opaque.webp' },
+      { id: 'polished', english: 'Polished', persian: 'صیقلی', image: new URL('../assets/images/polished.webp', import.meta.url).href },
+      { id: 'glossy', english: 'Glossy', persian: 'درخشان', image: new URL('../assets/images/glossy.webp', import.meta.url).href },
+      { id: 'transparent', english: 'Transparent', persian: 'شفاف', image: new URL('../assets/images/transparent.webp', import.meta.url).href },
+      { id: 'opaque', english: 'Opaque', persian: 'کدر', image: new URL('../assets/images/opaque.webp', import.meta.url).href },
       { id: 'fuzzy', english: 'Fuzzy', persian: 'پرزدار', image: new URL('../assets/images/fuzzy.webp', import.meta.url).href },
-      { id: 'grainy', english: 'Grainy', persian: 'دانه‌دار', image: '/images/grainy.webp' },
-      { id: 'wavy', english: 'Wavy', persian: 'موج‌دار', image: '/images/wavy.webp' },
-      { id: 'embossed', english: 'Embossed', persian: 'برجسته', image: '/images/embossed.webp' },
+      { id: 'grainy', english: 'Grainy', persian: 'دانه‌دار', image: new URL('../assets/images/grainy.webp', import.meta.url).href },
+      { id: 'wavy', english: 'Wavy', persian: 'موج‌دار', image: new URL('../assets/images/wavy.webp', import.meta.url).href },
     ]
-  }
+  },
+  // {
+  //   id: 'details',
+  //   title: 'Details',
+  //   titlePersian: 'جزئیات',
+  //   icon: 'layers',
+  //   keywords: [
+  //     { id: 'looking', english: 'Looking at viewer', persian: 'نگاه به بیننده', image: '/images/polished.webp' },
+  //   ]
+  // }
 ];

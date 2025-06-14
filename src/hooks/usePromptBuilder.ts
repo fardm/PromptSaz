@@ -167,6 +167,13 @@ export const usePromptBuilder = () => {
             output.texture += `, ${keyword.english}`;
           }
           break;
+        case 'details':
+          if (!output.details) {
+            output.details = keyword.english;
+          } else {
+            output.details += `, ${keyword.english}`;
+          }
+          break;
       }
     });
 

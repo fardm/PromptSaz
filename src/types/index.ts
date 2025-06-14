@@ -35,4 +35,5 @@ export interface PromptOutput {
     perspective?: string;
   };
   texture?: string;
+  details?: string;
 }

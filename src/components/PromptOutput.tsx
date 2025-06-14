@@ -32,7 +32,8 @@ const PromptOutput: React.FC<PromptOutputProps> = ({ promptOutput, onClear }) =>
     }
     
     if (promptOutput.texture) parts.push(promptOutput.texture);
-    
+    if (promptOutput.details) parts.push(promptOutput.details);
+
     return parts.join(', ');
   };
 
