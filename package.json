@@ -8,6 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "predeploy": "npm run build && copy CNAME dist\\CNAME",
     "deploy": "gh-pages -d dist",
     "update": "npm run build && npm run deploy"
   },
