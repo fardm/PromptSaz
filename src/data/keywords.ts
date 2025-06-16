@@ -97,6 +97,7 @@ export const categories: Category[] = [
           { id: 'realistic', english: 'realistic', persian: 'واقع‌گرایی', image: new URL('../assets/images/realistic.webp', import.meta.url).href },
           { id: 'hyperrealistic', english: 'hyperrealistic', persian: 'فرا واقع‌گرایی', image: new URL('../assets/images/hyperrealistic.webp', import.meta.url).href },
           { id: 'surreal', english: 'surreal', persian: 'سورئال', image: new URL('../assets/images/surreal.webp', import.meta.url).href },
+          { id: 'sci-fi', english: 'sci-fi', persian: 'علمی تخیلی', image: new URL('../assets/images/sci-fi.webp', import.meta.url).href },
           { id: 'pop-art', english: 'pop-art style', persian: 'پاپ آرت', image: new URL('../assets/images/pop-art.webp', import.meta.url).href },
           { id: 'cubist', english: 'cubist style', persian: 'کوبیسم', image: new URL('../assets/images/cubist.webp', import.meta.url).href },
           { id: 'abstract', english: 'abstract art style', persian: 'هنر انتزاعی', image: new URL('../assets/images/abstract.webp', import.meta.url).href },
@@ -113,10 +114,14 @@ export const categories: Category[] = [
           { id: 'flat-illustration', english: 'Flat illustration', persian: 'تصویر فلت', image: new URL('../assets/images/flat-illustration.webp', import.meta.url).href },
           { id: 'vector', english: 'Vector', persian: 'وکتور', image: new URL('../assets/images/vector.webp', import.meta.url).href },
           { id: 'pixel-art', english: 'Pixel art', persian: 'پیکسل آرت', image: new URL('../assets/images/pixel-art.webp', import.meta.url).href },
-          { id: 'line-art', english: 'Line art', persian: 'لاین آرت', image: new URL('../assets/images/line-art.webp', import.meta.url).href },
+          { id: 'drawing', english: 'drawing', persian: 'طراحی', image: new URL('../assets/images/drawing.webp', import.meta.url).href },
           { id: 'sketch', english: 'Sketch', persian: 'اسکچ', image: new URL('../assets/images/sketch.webp', import.meta.url).href },
+          { id: 'line-art', english: 'Line art', persian: 'لاین آرت', image: new URL('../assets/images/line-art.webp', import.meta.url).href },
           { id: 'doodle', english: 'Doodle', persian: 'دودل', image: new URL('../assets/images/doodle.webp', import.meta.url).href },
+          { id: 'painting', english: 'painting', persian: 'نقاشی', image: new URL('../assets/images/painting.webp', import.meta.url).href },
+          { id: 'oil-painting', english: 'oil painting', persian: 'نقاشی رنگ روغن', image: new URL('../assets/images/oil-painting.webp', import.meta.url).href },
           { id: 'concept-art', english: 'Concept art', persian: 'کانسپت آرت', image: new URL('../assets/images/concept-art.webp', import.meta.url).href },
+          { id: 'sticker-illustration', english: 'Sticker illustration', persian: 'استیکرn', image: new URL('../assets/images/Sticker-illustration.webp', import.meta.url).href },
           { id: 'comics', english: 'Comics', persian: 'کمیک', image: new URL('../assets/images/comics.webp', import.meta.url).href },
           { id: 'cartoon', english: 'Cartoon', persian: 'کارتون', image: new URL('../assets/images/cartoon.webp', import.meta.url).href },
           { id: 'anime', english: 'Anime', persian: 'انیمه', image: new URL('../assets/images/anime.webp', import.meta.url).href },
@@ -181,9 +186,14 @@ export const categories: Category[] = [
         titlePersian: 'قاب‌بندی',
         icon: 'frame',
         keywords: [
+          { id: 'extreme-close-up', english: 'Extreme Close-up', persian: 'نمای خیلی نزدیک', image: new URL('../assets/images/extreme-close-up.webp', import.meta.url).href },
           { id: 'close-up', english: 'Close-up', persian: 'نمای بسته', image: new URL('../assets/images/close-up.webp', import.meta.url).href },
-          { id: 'medium-shot', english: 'Medium shot', persian: 'نمای متوسط', image: new URL('../assets/images/medium-shot.webp', import.meta.url).href },
-          { id: 'long-shot', english: 'Long shot', persian: 'نمای باز', image: new URL('../assets/images/long-shot.webp', import.meta.url).href },
+          { id: 'medium-close-up', english: 'Medium Close-up', persian: 'نمای نیمه‌بسته', image: new URL('../assets/images/medium-close-up.webp', import.meta.url).href },
+          { id: 'medium-shot', english: 'Medium Shot', persian: 'نمای متوسط', image: new URL('../assets/images/medium-shot.webp', import.meta.url).href },
+          { id: 'long-shot', english: 'Long Shot', persian: 'نمای دور', image: new URL('../assets/images/long-shot.webp', import.meta.url).href },
+          { id: 'full-body-shot', english: 'Full Body Shot', persian: 'نمای تمام‌قد', image: new URL('../assets/images/full-body-shot.webp', import.meta.url).href },
+          { id: 'wide-shot', english: 'Wide Shot', persian: 'نمای باز', image: new URL('../assets/images/wide-shot.webp', import.meta.url).href },
+          { id: 'negative-space-framing', english: 'Negative Space Framing', persian: 'قاب‌بندی با فضای منفی', image: new URL('../assets/images/negative-space-framing.webp', import.meta.url).href },
         ]
       },
       {
@@ -209,6 +219,8 @@ export const categories: Category[] = [
           { id: 'portrait', english: 'Portrait', persian: 'پرتره', image: new URL('../assets/images/portrait.webp', import.meta.url).href },
           { id: 'modeling', english: 'Modeling photography', persian: 'مدلینگ', image: new URL('../assets/images/modeling.webp', import.meta.url).href },
           { id: 'landscape', english: 'Landscape photography', persian: 'منظره', image: new URL('../assets/images/landscape.webp', import.meta.url).href },
+          { id: 'product', english: 'Product photography', persian: 'عکاسی محصول', image: new URL('../assets/images/product.webp', import.meta.url).href },
+          { id: 'minimalist', english: ' Minimalist Photography', persian: 'عکاسی مینیمالیستی', image: new URL('../assets/images/minimalist.webp', import.meta.url).href },
         ]
       },
       {
@@ -260,13 +272,14 @@ export const categories: Category[] = [
       { id: 'wavy', english: 'Wavy', persian: 'موج‌دار', image: new URL('../assets/images/wavy.webp', import.meta.url).href },
     ]
   },
-  // {
-  //   id: 'details',
-  //   title: 'Details',
-  //   titlePersian: 'جزئیات',
-  //   icon: 'layers',
-  //   keywords: [
-  //     { id: 'looking', english: 'Looking at viewer', persian: 'نگاه به بیننده', image: '/images/polished.webp' },
-  //   ]
-  // }
+  {
+    id: 'details',
+    title: 'Details',
+    titlePersian: 'جزئیات',
+    icon: 'layout-list',
+    keywords: [
+      { id: 'looking', english: 'Looking at viewer', persian: 'نگاه به بیننده', image: new URL('../assets/images/looking.webp', import.meta.url).href },
+      { id: 'highly-detailed', english: 'highly detailed', persian: 'جزئیات بالا', image: new URL('../assets/images/highly-detailed.webp', import.meta.url).href },
+    ]
+  }
 ];

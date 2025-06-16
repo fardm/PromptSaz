@@ -16,6 +16,7 @@ import {
   Triangle,
   Layers,
   Brush,
+  LayoutList,
 } from 'lucide-react';
 
 export const getIcon = (iconName: string) => {
@@ -36,6 +37,7 @@ export const getIcon = (iconName: string) => {
     circle: Circle,
     triangle: Triangle,
     layers: Layers,
+    'layout-list': LayoutList,
   };
 
   return icons[iconName] || Lightbulb;
