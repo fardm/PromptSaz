@@ -119,7 +119,7 @@ export const categories: Category[] = [
           { id: 'holographic', english: 'Holographic', persian: 'هولوگرافیک', image: new URL('../assets/images/holographic.webp', import.meta.url).href },
           { id: 'comics', english: 'Comics', persian: 'کمیک', image: new URL('../assets/images/comics.webp', import.meta.url).href },
           { id: 'cartoon', english: 'Cartoon', persian: 'کارتون', image: new URL('../assets/images/cartoon.webp', import.meta.url).href },
-          { id: 'anime', english: 'Anime', persian: 'انیمه', image: new URL('../assets/images/anime.webp', import.meta.url).href },
+          { id: 'anime', english: 'Anime style', persian: 'انیمه', image: new URL('../assets/images/anime.webp', import.meta.url).href },
           { id: 'caricature', english: 'Caricature', persian: 'کاریکاتور', image: new URL('../assets/images/caricature.webp', import.meta.url).href },
           { id: 'pixar', english: 'Pixar animation style', persian: 'پیکسار', image: new URL('../assets/images/pixar.webp', import.meta.url).href },
           { id: 'sticker-illustration', english: 'Sticker illustration', persian: 'استیکر', image: new URL('../assets/images/Sticker-illustration.webp', import.meta.url).href },

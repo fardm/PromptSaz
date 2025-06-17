@@ -1,1 +1,2 @@
-ai-prompt-builder
+# PromptSaz
+ai image prompt builder
