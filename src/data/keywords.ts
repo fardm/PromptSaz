@@ -7,16 +7,32 @@ export const categories: Category[] = [
     titlePersian: 'نورپردازی',
     icon: 'lightbulb',
     keywords: [
-      { id: 'soft-box', english: 'Soft box lighting', persian: 'نورسافت باکس', image: new URL('../assets/images/soft-box-lighting.webp', import.meta.url).href },
-      { id: 'studio', english: 'Studio lighting', persian: 'نورپردازی استودیویی', image: new URL('../assets/images/studio-lighting.webp', import.meta.url).href },
+      { id: 'hard-lighting', english: 'hard lighting', persian: 'نور سخت', image: new URL('../assets/images/hard-lighting.webp', import.meta.url).href },
+      { id: 'hard-shadows', english: 'hard shadows', persian: 'سایه‌های سخت', image: new URL('../assets/images/hard-shadows.webp', import.meta.url).href },
+      { id: 'high-contrast', english: 'high-contrast lighting', persian: 'کنتراست بالا', image: new URL('../assets/images/high-contrast.webp', import.meta.url).href },
+      { id: 'low-contrast', english: 'low-contrast lighting', persian: 'کنتراست پایین', image: new URL('../assets/images/low-contrast.webp', import.meta.url).href },
+
+      { id: 'soft-box', english: 'Soft box lighting', persian: 'نورسافت باکس', image: new URL('../assets/images/soft-box.webp', import.meta.url).href },
+      { id: 'volumetric-lighting', english: 'volumetric-lighting', persian: 'نورپردازی حجمی', image: new URL('../assets/images/volumetric-lighting.webp', import.meta.url).href },
+      { id: 'global-illumination', english: 'global illumination', persian: 'نورپردازی سراسری', image: new URL('../assets/images/global-illumination.webp', import.meta.url).href },
+      { id: 'ambient-light', english: 'ambient light', persian: 'نور محیطی', image: new URL('../assets/images/ambient-light.webp', import.meta.url).href },
+      { id: 'studio-lighting', english: 'Studio lighting', persian: 'نورپردازی استودیویی', image: new URL('../assets/images/studio-lighting.webp', import.meta.url).href },
       { id: 'dark-studio', english: 'Dark studio', persian: 'استودیوی تاریک', image: new URL('../assets/images/dark-studio.webp', import.meta.url).href },
-      { id: 'cinematic', english: 'Cinematic lighting', persian: 'نورپردازی سینمایی', image: new URL('../assets/images/cinematic-lighting.webp', import.meta.url).href },
-      { id: 'dramatic', english: 'Dramatic lighting', persian: 'نورپردازی دراماتیک', image: new URL('../assets/images/dramatic-lighting.webp', import.meta.url).href },
-      { id: 'diffuse', english: 'Diffuse lighting', persian: 'نور پراکنده', image: new URL('../assets/images/diffuse-lighting.webp', import.meta.url).href },
-      { id: 'dimly', english: 'Dimly lit', persian: 'کم نور', image: new URL('../assets/images/dimly-lit.webp', import.meta.url).href },
-      { id: 'rim', english: 'Rim lighting', persian: 'نور لبه', image: new URL('../assets/images/rim-lighting.webp', import.meta.url).href },
-      { id: 'neon', english: 'Neon light', persian: 'نئون', image: new URL('../assets/images/neon-light.webp', import.meta.url).href },
+      { id: 'diffuse-lighting', english: 'Diffuse lighting', persian: 'نور پراکنده', image: new URL('../assets/images/diffuse-lighting.webp', import.meta.url).href },
+      { id: 'dimly-lit', english: 'Dimly lit', persian: 'کم نور', image: new URL('../assets/images/dimly-lit.webp', import.meta.url).href },
+      { id: 'rim-lighting', english: 'Rim lighting', persian: 'نور لبه', image: new URL('../assets/images/rim-lighting.webp', import.meta.url).href },
+      { id: 'dappled-light', english: 'dappled-light', persian: 'نور تکه تکه', image: new URL('../assets/images/dappled-light.webp', import.meta.url).href },
+      { id: 'glowing-lights', english: 'glowing lights', persian: 'نورهای درخشان', image: new URL('../assets/images/glowing-lights.webp', import.meta.url).href },
+      { id: 'neon-light', english: 'Neon light', persian: 'نئون', image: new URL('../assets/images/neon-light.webp', import.meta.url).href },
       { id: 'silhouette', english: 'Silhouetting', persian: 'سایه‌نما (سیلوئت)', image: new URL('../assets/images/silhouette.webp', import.meta.url).href },
+      { id: 'backlight', english: 'backlight', persian: 'نور پشت', image: new URL('../assets/images/backlight.webp', import.meta.url).href },
+
+      { id: 'cinematic-lighting', english: 'Cinematic lighting', persian: 'نورپردازی سینمایی', image: new URL('../assets/images/cinematic-lighting.webp', import.meta.url).href },
+      { id: 'dramatic-lighting', english: 'Dramatic lighting', persian: 'نورپردازی دراماتیک', image: new URL('../assets/images/dramatic-lighting.webp', import.meta.url).href },
+
+
+      
+
       { id: 'sunlight', english: 'Sunlight', persian: 'نور خورشید', image: new URL('../assets/images/sunlight.webp', import.meta.url).href },
       { id: 'sunset', english: 'Sunset', persian: 'غروب آفتاب', image: new URL('../assets/images/sunset.webp', import.meta.url).href },
       { id: 'radiant', english: 'Radiant light rays', persian: 'پرتوهای نور شعاعی', image: new URL('../assets/images/radiant.webp', import.meta.url).href },
@@ -35,19 +51,32 @@ export const categories: Category[] = [
     titlePersian: 'رنگ بندی',
     icon: 'palette',
     keywords: [
-      { id: 'black-white', english: 'Black and White', persian: 'سیاه سفید', image: new URL('../assets/images/black-and-white.webp', import.meta.url).href },
-      { id: 'subdued', english: 'Subdued neutrals', persian: 'خنثی', image: new URL('../assets/images/subdued-neutrals.webp', import.meta.url).href },
-      { id: 'muted', english: 'Muted colors', persian: 'رنگ های مرده', image: new URL('../assets/images/muted-colors.webp', import.meta.url).href },
       { id: 'vivid', english: 'Vivid Colors', persian: 'رنگ های زنده', image: new URL('../assets/images/vivid-colors.webp', import.meta.url).href },
-      { id: 'vibrant', english: 'Vibrant Colors', persian: 'رنگ های پر جنب‌و‌جوش', image: new URL('../assets/images/vibrant-colors.webp', import.meta.url).href },
-      { id: 'warm', english: 'Warm tones', persian: 'رنگ‌های گرم', image: new URL('../assets/images/warm-tones.webp', import.meta.url).href },
+      { id: 'muted', english: 'Muted colors', persian: 'رنگ های مرده', image: new URL('../assets/images/muted-colors.webp', import.meta.url).href },
+      { id: 'vibrant', english: 'Vibrant Colors', persian: 'رنگ‌های پر شور و حرارت', image: new URL('../assets/images/vibrant-colors.webp', import.meta.url).href },
+      { id: 'subdued', english: 'Subdued neutrals', persian: 'خنثی', image: new URL('../assets/images/subdued-neutrals.webp', import.meta.url).href },
+      { id: 'pale-dusty', english: 'Pale and dusty colors', persian: 'کم‌رنگ و غبارآلود', image: new URL('../assets/images/pale-dusty.webp', import.meta.url).href },
+      { id: 'bright-sunny', english: 'Bright and sunny colors', persian: 'روشن و آفتابی', image: new URL('../assets/images/bright-sunny.webp', import.meta.url).href },
       { id: 'cool', english: 'Cool tones', persian: 'رنگ‌های سرد', image: new URL('../assets/images/cool tones.webp', import.meta.url).href },
+      { id: 'warm', english: 'Warm tones', persian: 'رنگ‌های گرم', image: new URL('../assets/images/warm-tones.webp', import.meta.url).href },
+      { id: 'high-saturation', english: 'High saturation colors', persian: 'اشباع زیاد', image: new URL('../assets/images/high-saturation.webp', import.meta.url).href },
+      { id: 'low-saturation', english: 'low saturation colors', persian: 'اشباع کم', image: new URL('../assets/images/low-saturation.webp', import.meta.url).href },
+
+
+      { id: 'black-white', english: 'Black and White', persian: 'سیاه سفید', image: new URL('../assets/images/black-and-white.webp', import.meta.url).href },
+      { id: 'neon-colors', english: 'neon colors', persian: 'نئون', image: new URL('../assets/images/neon-colors.webp', import.meta.url).href },
       { id: 'pastel', english: 'Pastel Palette', persian: 'پالت پاستلی', image: new URL('../assets/images/pastel-palette.webp', import.meta.url).href },
       { id: 'earth', english: 'Earth tones', persian: 'رنگ‌های زمینی', image: new URL('../assets/images/earth-tones.webp', import.meta.url).href },
+      { id: 'rainbow', english: 'rainbow colors', persian: 'رنگین کمانی', image: new URL('../assets/images/rainbow.webp', import.meta.url).href },
+      { id: 'oceanic', english: 'Oceanic colors', persian: 'رنگ‌های اقیانوسی', image: new URL('../assets/images/Oceanic.webp', import.meta.url).href },
+      { id: 'scandinavian-inspired', english: 'Scandinavian-inspired colors', persian: 'اسکاندیناوری', image: new URL('../assets/images/scandinavian-inspired.webp', import.meta.url).href },
+      { id: 'sepia-toned', english: 'Sepia-toned', persian: '(قرمز قهوه‌ای) سپیا', image: new URL('../assets/images/sepia-toned.webp', import.meta.url).href },
       { id: 'jewel', english: 'Jewel tones', persian: 'رنگ‌های جواهری', image: new URL('../assets/images/jewel-tones.webp', import.meta.url).href },
       { id: 'vintage-colors', english: 'Vintage', persian: 'قدیمی', image: new URL('../assets/images/vintage.webp', import.meta.url).href },
       { id: 'muted-vintage', english: 'Muted vintage colors', persian: 'رنگ‌های ملایم قدیمی', image: new URL('../assets/images/muted-vintage.webp', import.meta.url).href },
       { id: 'cinematic-grading', english: 'Cinematic color grading', persian: 'تنظیم رنگ سینمایی', image: new URL('../assets/images/cinematic-color.webp', import.meta.url).href },
+      // { id: 'soft-dreamy', english: 'Soft and dreamy hues', persian: 'نرم و رویایی', image: new URL('../assets/images/soft-dreamy.webp', import.meta.url).href },
+      // { id: 'retro-inspired', english: 'Retro-inspired colors', persian: 'الهام گرفته از رترو', image: new URL('../assets/images/retro-inspired.webp', import.meta.url).href },
     ]
   },
   {
@@ -104,8 +133,9 @@ export const categories: Category[] = [
         keywords: [
           { id: 'drawing', english: 'drawing', persian: 'طراحی', image: new URL('../assets/images/drawing.webp', import.meta.url).href },
           { id: 'sketch', english: 'Sketch', persian: 'اسکچ', image: new URL('../assets/images/sketch.webp', import.meta.url).href },
+          // { id: 'chiaroscuro', english: 'chiaroscuro', persian: 'سیاه قلم', image: new URL('../assets/images/chiaroscuro.webp', import.meta.url).href },
           { id: 'line-art', english: 'Line art', persian: 'لاین آرت', image: new URL('../assets/images/line-art.webp', import.meta.url).href },
-          { id: 'doodle', english: 'Doodle', persian: 'دودل', image: new URL('../assets/images/doodle.webp', import.meta.url).href },
+          // { id: 'doodle', english: 'Doodle', persian: 'دودل', image: new URL('../assets/images/doodle.webp', import.meta.url).href },
           { id: '3d-illustration', english: '3D illustration', persian: 'تصویر سه‌بعدی', image: new URL('../assets/images/3d-illustration.webp', import.meta.url).href },
           { id: 'flat-illustration', english: 'Flat illustration', persian: 'تصویر فلت', image: new URL('../assets/images/flat-illustration.webp', import.meta.url).href },
           { id: 'vector', english: 'Vector', persian: 'وکتور', image: new URL('../assets/images/vector.webp', import.meta.url).href },
@@ -252,6 +282,8 @@ export const categories: Category[] = [
           { id: 'three-point', english: 'Three-point perspective', persian: 'سه نقطه‌ای', image: new URL('../assets/images/three-point.webp', import.meta.url).href },
           { id: 'isometric', english: 'Isometric', persian: 'ایزومتریک', image: new URL('../assets/images/isometric.webp', import.meta.url).href },
           { id: 'atmospheric', english: 'Atmospheric perspective', persian: 'پرسپکتیو اتمسفری', image: new URL('../assets/images/atmospheric.webp', import.meta.url).href },
+          { id: 'infinite-perspective', english: 'Infinite perspective', persian: 'پرسپکتیو نامحدود', image: new URL('../assets/images/infinite-perspective.webp', import.meta.url).href },
+
         ]
       }
     ]
