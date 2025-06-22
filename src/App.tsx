@@ -6,7 +6,7 @@ import PromptOutput from './components/PromptOutput';
 import { usePromptBuilder } from './hooks/usePromptBuilder';
 
 function App() {
-  const [showTranslation, setShowTranslation] = useState(false);
+  const [showTranslation, setShowTranslation] = useState(true);
   const [darkMode, setDarkMode] = useState(() => {
     // Check localStorage for saved preference
     const savedMode = localStorage.getItem('theme');
