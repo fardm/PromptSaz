@@ -330,7 +330,7 @@ export const categories: Category[] = [
     icon: 'eye',
     keywords: [
       { id: 'looking-at-viewer', english: 'Looking at viewer', persian: 'نگاه به بیننده', image: new URL('../assets/images/looking-at-viewer.webp', import.meta.url).href },
-      { id: 'slightly-away', english: 'slightly away from camera', persian: 'دور از دوربین', image: new URL('../assets/images/slightly-away.webp', import.meta.url).href },
+      { id: 'slightly-away', english: 'slightly away from camera', persian: 'کمی دور از دوربین', image: new URL('../assets/images/slightly-away.webp', import.meta.url).href },
 
     ]
   },
