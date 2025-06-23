@@ -6,43 +6,78 @@ export const categories: Category[] = [
     title: 'Lighting',
     titlePersian: 'نورپردازی',
     icon: 'lightbulb',
-    keywords: [
-      { id: 'hard-lighting', english: 'hard lighting', persian: 'نور سخت', image: new URL('../assets/images/hard-lighting.webp', import.meta.url).href },
-      { id: 'hard-shadows', english: 'hard shadows', persian: 'سایه‌های سخت', image: new URL('../assets/images/hard-shadows.webp', import.meta.url).href },
-      { id: 'high-contrast', english: 'high-contrast lighting', persian: 'کنتراست بالا', image: new URL('../assets/images/high-contrast.webp', import.meta.url).href },
-      { id: 'low-contrast', english: 'low-contrast lighting', persian: 'کنتراست پایین', image: new URL('../assets/images/low-contrast.webp', import.meta.url).href },
+    keywords: [],
+    subcategories: [
 
-      { id: 'soft-box', english: 'Soft box lighting', persian: 'نورسافت باکس', image: new URL('../assets/images/soft-box.webp', import.meta.url).href },
-      { id: 'volumetric-lighting', english: 'volumetric-lighting', persian: 'نورپردازی حجمی', image: new URL('../assets/images/volumetric-lighting.webp', import.meta.url).href },
-      { id: 'global-illumination', english: 'global illumination', persian: 'نورپردازی سراسری', image: new URL('../assets/images/global-illumination.webp', import.meta.url).href },
-      { id: 'ambient-light', english: 'ambient light', persian: 'نور محیطی', image: new URL('../assets/images/ambient-light.webp', import.meta.url).href },
-      { id: 'studio-lighting', english: 'Studio lighting', persian: 'نورپردازی استودیویی', image: new URL('../assets/images/studio-lighting.webp', import.meta.url).href },
-      { id: 'dark-studio', english: 'Dark studio', persian: 'استودیوی تاریک', image: new URL('../assets/images/dark-studio.webp', import.meta.url).href },
-      { id: 'diffuse-lighting', english: 'Diffuse lighting', persian: 'نور پراکنده', image: new URL('../assets/images/diffuse-lighting.webp', import.meta.url).href },
-      { id: 'dimly-lit', english: 'Dimly lit', persian: 'کم نور', image: new URL('../assets/images/dimly-lit.webp', import.meta.url).href },
-      { id: 'rim-lighting', english: 'Rim lighting', persian: 'نور لبه', image: new URL('../assets/images/rim-lighting.webp', import.meta.url).href },
-      { id: 'dappled-light', english: 'dappled-light', persian: 'نور تکه تکه', image: new URL('../assets/images/dappled-light.webp', import.meta.url).href },
-      { id: 'glowing-lights', english: 'glowing lights', persian: 'نورهای درخشان', image: new URL('../assets/images/glowing-lights.webp', import.meta.url).href },
-      { id: 'neon-light', english: 'Neon light', persian: 'نئون', image: new URL('../assets/images/neon-light.webp', import.meta.url).href },
-      { id: 'silhouette', english: 'Silhouetting', persian: 'سایه‌نما (سیلوئت)', image: new URL('../assets/images/silhouette.webp', import.meta.url).href },
-      { id: 'backlight', english: 'backlight', persian: 'نور پشت', image: new URL('../assets/images/backlight.webp', import.meta.url).href },
+      {
+        id: 'light-sources',
+        title: 'Light Sources',
+        titlePersian: 'منبع نور',
+        icon: 'zap',
+        keywords: [
+          { id: 'soft-box', english: 'Soft box lighting', persian: 'نورسافت باکس', image: new URL('../assets/images/soft-box.webp', import.meta.url).href },
+          { id: 'volumetric-lighting', english: 'volumetric-lighting', persian: 'نورپردازی حجمی', image: new URL('../assets/images/volumetric-lighting.webp', import.meta.url).href },
+          { id: 'global-illumination', english: 'global illumination', persian: 'نورپردازی سراسری', image: new URL('../assets/images/global-illumination.webp', import.meta.url).href },
+          { id: 'ambient-light', english: 'ambient light', persian: 'نور محیطی', image: new URL('../assets/images/ambient-light.webp', import.meta.url).href },
+          { id: 'diffuse-lighting', english: 'Diffuse lighting', persian: 'نور پراکنده', image: new URL('../assets/images/diffuse-lighting.webp', import.meta.url).href },
+          
+          { id: 'sunlight', english: 'Sunlight', persian: 'نور خورشید', image: new URL('../assets/images/sunlight.webp', import.meta.url).href },
+          { id: 'sunset', english: 'Sunset', persian: 'غروب آفتاب', image: new URL('../assets/images/sunset.webp', import.meta.url).href },
+          { id: 'radiant', english: 'Radiant light rays', persian: 'پرتوهای نور شعاعی', image: new URL('../assets/images/radiant.webp', import.meta.url).href },
+          { id: 'god-rays', english: 'God rays', persian: 'اشعه خدا', image: new URL('../assets/images/god-rays.webp', import.meta.url).href },
+          { id: 'golden-hour', english: 'Golden hour', persian: 'ساعت طلایی', image: new URL('../assets/images/golden-hour.webp', import.meta.url).href },
+          { id: 'natural', english: 'Natural lighting', persian: 'نور طبیعی', image: new URL('../assets/images/natural.webp', import.meta.url).href },
+          { id: 'overcast', english: 'Overcast lighting', persian: 'نور آسمان ابری', image: new URL('../assets/images/overcast.webp', import.meta.url).href },
+          { id: 'twilight', english: 'Twilight', persian: 'گرگ و میش', image: new URL('../assets/images/twilight.webp', import.meta.url).href },
+          { id: 'blue-hour', english: 'Blue hour', persian: 'ساعات آبی (شفق صبحگاهی)', image: new URL('../assets/images/blue-hour.webp', import.meta.url).href },
+          { id: 'moonlight', english: 'Moonlight', persian: 'مهتاب', image: new URL('../assets/images/moonlight.webp', import.meta.url).href },
 
-      { id: 'cinematic-lighting', english: 'Cinematic lighting', persian: 'نورپردازی سینمایی', image: new URL('../assets/images/cinematic-lighting.webp', import.meta.url).href },
-      { id: 'dramatic-lighting', english: 'Dramatic lighting', persian: 'نورپردازی دراماتیک', image: new URL('../assets/images/dramatic-lighting.webp', import.meta.url).href },
+        ]
+      },
 
+      {
+        id: 'light-intensity',
+        title: 'Light Intensity',
+        titlePersian: 'شدت نور',
+        icon: 'activity',
+        keywords: [
+          { id: 'hard-lighting', english: 'hard lighting', persian: 'نور سخت', image: new URL('../assets/images/hard-lighting.webp', import.meta.url).href },
+          { id: 'hard-shadows', english: 'hard shadows', persian: 'سایه‌های سخت', image: new URL('../assets/images/hard-shadows.webp', import.meta.url).href },
+          { id: 'high-contrast', english: 'high-contrast lighting', persian: 'کنتراست بالا', image: new URL('../assets/images/high-contrast.webp', import.meta.url).href },
+          { id: 'low-contrast', english: 'low-contrast lighting', persian: 'کنتراست پایین', image: new URL('../assets/images/low-contrast.webp', import.meta.url).href },
+        ]
+      },
 
-      
+      {
+        id: 'lighting-direction',
+        title: 'Lighting Direction',
+        titlePersian: 'جهت نور',
+        icon: 'move-down-right',
+        keywords: [
+          { id: 'backlight', english: 'backlight', persian: 'نور پشت', image: new URL('../assets/images/backlight.webp', import.meta.url).href },
+          { id: 'silhouette', english: 'Silhouetting', persian: 'سایه‌نما (سیلوئت)', image: new URL('../assets/images/silhouette.webp', import.meta.url).href },
+          { id: 'rim-lighting', english: 'Rim lighting', persian: 'نور لبه', image: new URL('../assets/images/rim-lighting.webp', import.meta.url).href },
 
-      { id: 'sunlight', english: 'Sunlight', persian: 'نور خورشید', image: new URL('../assets/images/sunlight.webp', import.meta.url).href },
-      { id: 'sunset', english: 'Sunset', persian: 'غروب آفتاب', image: new URL('../assets/images/sunset.webp', import.meta.url).href },
-      { id: 'radiant', english: 'Radiant light rays', persian: 'پرتوهای نور شعاعی', image: new URL('../assets/images/radiant.webp', import.meta.url).href },
-      { id: 'god-rays', english: 'God rays', persian: 'اشعه خدا', image: new URL('../assets/images/god-rays.webp', import.meta.url).href },
-      { id: 'golden-hour', english: 'Golden hour', persian: 'ساعت طلایی', image: new URL('../assets/images/golden-hour.webp', import.meta.url).href },
-      { id: 'natural', english: 'Natural lighting', persian: 'نور طبیعی', image: new URL('../assets/images/natural.webp', import.meta.url).href },
-      { id: 'overcast', english: 'Overcast lighting', persian: 'نور آسمان ابری', image: new URL('../assets/images/overcast.webp', import.meta.url).href },
-      { id: 'twilight', english: 'Twilight', persian: 'گرگ و میش', image: new URL('../assets/images/twilight.webp', import.meta.url).href },
-      { id: 'blue-hour', english: 'Blue hour', persian: 'ساعات آبی (شفق صبحگاهی)', image: new URL('../assets/images/blue-hour.webp', import.meta.url).href },
-      { id: 'moonlight', english: 'Moonlight', persian: 'مهتاب', image: new URL('../assets/images/moonlight.webp', import.meta.url).href },
+        ]
+      },
+
+      {
+        id: 'lighting-styles',
+        title: 'Lighting Styles',
+        titlePersian: 'سبک نورپردازی',
+        icon: 'blend',
+        keywords: [
+          { id: 'studio-lighting', english: 'Studio lighting', persian: 'نورپردازی استودیویی', image: new URL('../assets/images/studio-lighting.webp', import.meta.url).href },
+          { id: 'dark-studio', english: 'Dark studio', persian: 'استودیوی تاریک', image: new URL('../assets/images/dark-studio.webp', import.meta.url).href },
+          { id: 'cinematic-lighting', english: 'Cinematic lighting', persian: 'نورپردازی سینمایی', image: new URL('../assets/images/cinematic-lighting.webp', import.meta.url).href },
+          { id: 'dramatic-lighting', english: 'Dramatic lighting', persian: 'نورپردازی دراماتیک', image: new URL('../assets/images/dramatic-lighting.webp', import.meta.url).href },
+          { id: 'dimly-lit', english: 'Dimly lit', persian: 'کم نور', image: new URL('../assets/images/dimly-lit.webp', import.meta.url).href },
+          { id: 'dappled-light', english: 'dappled-light', persian: 'نور تکه تکه', image: new URL('../assets/images/dappled-light.webp', import.meta.url).href },
+          { id: 'glowing-lights', english: 'glowing lights', persian: 'نورهای درخشان', image: new URL('../assets/images/glowing-lights.webp', import.meta.url).href },
+          { id: 'neon-light', english: 'Neon light', persian: 'نئون', image: new URL('../assets/images/neon-light.webp', import.meta.url).href },
+
+        ]
+      },
     ]
   },
   {
@@ -184,7 +219,7 @@ export const categories: Category[] = [
         id: 'subject-view',
         title: 'Subject View',
         titlePersian: 'نمای سوژه',
-        icon: 'eye',
+        icon: 'rotate-3d',
         keywords: [
           { id: 'front-view', english: 'Front view', persian: 'رو به رو', image: new URL('../assets/images/front-view.webp', import.meta.url).href },
           { id: 'side-view', english: 'Side view', persian: 'نیم رخ', image: new URL('../assets/images/side-view.webp', import.meta.url).href },
@@ -198,7 +233,7 @@ export const categories: Category[] = [
         id: 'camera-angle',
         title: 'Camera Angle',
         titlePersian: 'زاویه دوربین',
-        icon: 'camera',
+        icon: 'cctv',
         keywords: [
           { id: 'eye-level', english: 'Eye level shot', persian: 'هم‌سطح چشم', image: new URL('../assets/images/eye-level.webp', import.meta.url).href },
           { id: 'low-angle', english: 'Low angle shot', persian: 'از پایین', image: new URL('../assets/images/low-angle.webp', import.meta.url).href },
@@ -258,7 +293,7 @@ export const categories: Category[] = [
         id: 'lens-type',
         title: 'Lens Type',
         titlePersian: 'لنز',
-        icon: 'circle',
+        icon: 'camera',
         keywords: [
           { id: 'wide-lens', english: 'Wide Lens', persian: 'واید', image: new URL('../assets/images/wide-lens.webp', import.meta.url).href },
           { id: 'ultrawide', english: 'Ultra wide angle', persian: 'الترا واید', image: new URL('../assets/images/ultrawide.webp', import.meta.url).href },

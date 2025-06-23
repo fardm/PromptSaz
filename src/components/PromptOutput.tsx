@@ -15,7 +15,12 @@ const PromptOutput: React.FC<PromptOutputProps> = ({ promptOutput, onClear }) =>
     const parts: string[] = [];
     
     if (promptOutput.prompt) parts.push(promptOutput.prompt);
-    if (promptOutput.lighting) parts.push(promptOutput.lighting);
+    // if (promptOutput.lighting) parts.push(promptOutput.lighting);
+    if (promptOutput.lighting) {
+      Object.values(promptOutput.lighting).forEach(value => {
+        if (value) parts.push(value);
+      });
+    }
     if (promptOutput.color_palette) parts.push(promptOutput.color_palette);
     if (promptOutput.mood) parts.push(promptOutput.mood);
     

@@ -53,10 +53,36 @@ export const usePromptBuilder = () => {
 
       switch (categoryId) {
         case 'lighting':
-          if (!output.lighting) {
-            output.lighting = keyword.english;
-          } else {
-            output.lighting += `, ${keyword.english}`;
+          if (!output.lighting) output.lighting = {};
+          switch (subcategoryId) {
+            case 'light-sources':
+              if (!output.lighting.light_sources) {
+                output.lighting.light_sources = keyword.english;
+              } else {
+                output.lighting.light_sources += `, ${keyword.english}`;
+              }
+              break;
+            case 'light-intensity':
+              if (!output.lighting.light_intensity) {
+                output.lighting.light_intensity = keyword.english;
+              } else {
+                output.lighting.light_intensity += `, ${keyword.english}`;
+              }
+              break;
+            case 'lighting-direction':
+              if (!output.lighting.lighting_direction) {
+                output.lighting.lighting_direction = keyword.english;
+              } else {
+                output.lighting.lighting_direction += `, ${keyword.english}`;
+              }
+              break;
+            case 'lighting-styles':
+              if (!output.lighting.lighting_styles) {
+                output.lighting.lighting_styles = keyword.english;
+              } else {
+                output.lighting.lighting_styles += `, ${keyword.english}`;
+              }
+              break;
           }
           break;
         case 'color-palette':

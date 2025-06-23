@@ -17,6 +17,13 @@ import {
   Layers,
   Brush,
   LayoutList,
+  Move,
+  Blend,
+  Activity,
+  Zap,
+  MoveDownRight,
+  Rotate3d,
+  Cctv,
 } from 'lucide-react';
 
 export const getIcon = (iconName: string) => {
@@ -38,6 +45,13 @@ export const getIcon = (iconName: string) => {
     triangle: Triangle,
     layers: Layers,
     'layout-list': LayoutList,
+    move: Move,
+    blend : Blend,
+    activity: Activity,
+    zap: Zap,
+    'rotate-3d' : Rotate3d,
+    'move-down-right': MoveDownRight,
+    cctv: Cctv,
   };
 
   return icons[iconName] || Lightbulb;

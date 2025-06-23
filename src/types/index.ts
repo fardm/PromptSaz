@@ -16,7 +16,12 @@ export interface Category {
 
 export interface PromptOutput {
   prompt: string;
-  lighting?: string;
+  lighting?: {
+    light_sources?: string;
+    light_intensity?: string;
+    lighting_direction?: string;
+    lighting_styles?: string;
+  };
   color_palette?: string;
   mood?: string;
   style?: {
