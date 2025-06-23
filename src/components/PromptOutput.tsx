@@ -36,8 +36,10 @@ const PromptOutput: React.FC<PromptOutputProps> = ({ promptOutput, onClear }) =>
       });
     }
     
+    if (promptOutput.gaze_direction) parts.push(promptOutput.gaze_direction);
     if (promptOutput.texture) parts.push(promptOutput.texture);
     if (promptOutput.details) parts.push(promptOutput.details);
+
 
     return parts.join(', ');
   };

@@ -24,6 +24,7 @@ import {
   MoveDownRight,
   Rotate3d,
   Cctv,
+  LampCeiling,
 } from 'lucide-react';
 
 export const getIcon = (iconName: string) => {
@@ -52,6 +53,7 @@ export const getIcon = (iconName: string) => {
     'rotate-3d' : Rotate3d,
     'move-down-right': MoveDownRight,
     cctv: Cctv,
+    'lamp-ceiling': LampCeiling,
   };
 
   return icons[iconName] || Lightbulb;

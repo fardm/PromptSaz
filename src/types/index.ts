@@ -39,6 +39,8 @@ export interface PromptOutput {
     lens_type?: string;
     perspective?: string;
   };
+  gaze_direction?: string;
   texture?: string;
   details?: string;
+
 }

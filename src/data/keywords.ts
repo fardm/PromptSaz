@@ -13,7 +13,7 @@ export const categories: Category[] = [
         id: 'light-sources',
         title: 'Light Sources',
         titlePersian: 'منبع نور',
-        icon: 'zap',
+        icon: 'lamp-ceiling',
         keywords: [
           { id: 'soft-box', english: 'Soft box lighting', persian: 'نورسافت باکس', image: new URL('../assets/images/soft-box.webp', import.meta.url).href },
           { id: 'volumetric-lighting', english: 'volumetric-lighting', persian: 'نورپردازی حجمی', image: new URL('../assets/images/volumetric-lighting.webp', import.meta.url).href },
@@ -324,6 +324,17 @@ export const categories: Category[] = [
     ]
   },
   {
+    id: 'gaze-direction',
+    title: 'Gaze Direction',
+    titlePersian: 'جهت نگاه',
+    icon: 'eye',
+    keywords: [
+      { id: 'looking-at-viewer', english: 'Looking at viewer', persian: 'نگاه به بیننده', image: new URL('../assets/images/looking-at-viewer.webp', import.meta.url).href },
+      { id: 'slightly-away', english: 'slightly away from camera', persian: 'دور از دوربین', image: new URL('../assets/images/slightly-away.webp', import.meta.url).href },
+
+    ]
+  },
+  {
     id: 'texture',
     title: 'Texture',
     titlePersian: 'بافت',
@@ -346,7 +357,6 @@ export const categories: Category[] = [
     titlePersian: 'جزئیات',
     icon: 'layout-list',
     keywords: [
-      { id: 'looking', english: 'Looking at viewer', persian: 'نگاه به بیننده', image: new URL('../assets/images/looking.webp', import.meta.url).href },
       { id: 'highly-detailed', english: 'highly detailed', persian: 'جزئیات بالا', image: new URL('../assets/images/highly-detailed.webp', import.meta.url).href },
     ]
   }

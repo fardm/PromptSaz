@@ -186,6 +186,13 @@ export const usePromptBuilder = () => {
               break;
           }
           break;
+        case 'gaze-direction':
+          if (!output.gaze_direction) {
+            output.gaze_direction = keyword.english;
+          } else {
+            output.gaze_direction += `, ${keyword.english}`;
+          }
+          break;
         case 'texture':
           if (!output.texture) {
             output.texture = keyword.english;
