@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build && copy CNAME dist\\CNAME",
     "deploy": "gh-pages -d dist",
-    "update": "npm run build && npm run deploy"
+    "publish": "npm run build && npm run deploy"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
