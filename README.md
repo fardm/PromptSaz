@@ -12,4 +12,4 @@
 
 پیشنهادها رو برام بفرستین یا مستقیما این ریپو رو ویرایش کنید.
 
-همه کلمات توی فایل [keywords.ts](src/data/keywords.ts) ذخیره شدند. تصوایر هم توی مسیر src/assets/images هستند.
+همه کلمات توی فایل [keywords.ts](src/data/keywords.ts) ذخیره شدند. تصاویر هم توی مسیر src/assets/images هستند.
